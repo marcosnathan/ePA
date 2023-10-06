@@ -3,6 +3,7 @@ package mn.dev.epa.model
 import java.util.Date
 
 data class Publication(
+    val id: String,
     val title: String,
     val date: Date,
     val agency: String,

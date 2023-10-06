@@ -4,10 +4,12 @@ import mn.dev.epa.model.Publication
 import mn.dev.epa.model.PublicationsFeed
 import java.text.SimpleDateFormat
 import java.util.Locale
+import java.util.UUID
 
 val formatter = SimpleDateFormat("dd/MM/yyyy", Locale.forLanguageTag("pt-Br"))
 
 val publication1 = Publication(
+    id = UUID.fromString("03/10/2023|3").toString(),
     title = "DECRETO MUNICIPAL N˚ 1049/2023",
     date = formatter.parse("03/10/2023")!!,
     agency = "PREFEITURA",
@@ -18,6 +20,7 @@ val publication1 = Publication(
 )
 
 val publication2 = Publication(
+    id = UUID.fromString("03/10/2023|2").toString(),
     title = "RATIFICAÇÃO/DISPENSA DE LICITAÇÃO Nº035/2023",
     date = formatter.parse("03/10/2023")!!,
     agency = "PREFEITURA",
@@ -28,6 +31,7 @@ val publication2 = Publication(
 )
 
 val publication3 = Publication(
+    id = UUID.fromString("03/10/2023|1").toString(),
     title = "EXTRATO DO CONTRATO Nº 121/DISPENSA DE LICITAÇÃO Nº035/2023",
     date = formatter.parse("03/10/2023")!!,
     agency = "PREFEITURA",
