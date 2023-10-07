@@ -4,14 +4,14 @@ import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 
 object ePADestinations {
-    const val HOME_ROUTE = "home"
+    const val NEWS_ROUTE = "news"
     const val OFFICIAL_DIARY_ROUTE = "official_diary"
     const val SOCIAL_ROUTE = "social"
 }
 
 class ePANavigationsActions(navController: NavHostController){
-    val navigateToHome: () -> Unit = {
-        navController.navigate(ePADestinations.HOME_ROUTE) {
+    val navigateToNews: () -> Unit = {
+        navController.navigate(ePADestinations.NEWS_ROUTE) {
             popUpTo(navController.graph.findStartDestination().id) {
                 saveState = true
             }
